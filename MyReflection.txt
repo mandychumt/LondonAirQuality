@@ -1,0 +1,45 @@
+1. What did you set out to study? 
+
+My project topic is “What is the best time to visit London?” and its target users are people who want to travel to London this year (i.e. from May to December in 2019). It is often said that the weather in London is really unstable and hard to predict. People who have visited London always complain that there is too much rain. Therefore, it is important to do preparation before visiting London. This project aims to help people know more information about environmental conditions, life quality, predicted weather in London from May to December this year. Then they can select the best time to visit London for comfortable weather and higher air quality according to this information and their preferences.
+
+To be more specific, this project mainly contains three data sources. At first, it grabs the carbon intensity forecast data from an API and then obtains the average monthly carbon intensity from May to December in 2018. By using this data, the project can predict the carbon intensity of the corresponding month in 2019.  Therefore, it can predict that which months this year will have the most probability to have pollution related to carbon dioxide then tell users to avoid these months.
+
+In addition, this project also grabs data from a website which offers weather information in London. This information contains predicted average, low and high temperatures, average sunshine hours, average rainfall and rainfall days from May to December this year.
+
+The above-mentioned data are combined into a data frame for better convenience. By using this data frame, users can select a month with more comfortable weather and better air quality to visit London.
+
+Apart from the weather and air quality, this project also provides tourists with relevant life quality scores of London including the cost of living, travel connectivity, safety, environmental quality, economy and internet access. These scores are sorted from the highest to the lowest and displayed in another data frame. Users can have a better understanding of London’s performance in different fields that are related to tourism.
+
+By integrating these three data sets, users can have an overall understanding of London’s weather, air condition and life quality. 
+
+
+
+2. What did you discover/what were your conclusions?
+
+From the data frames and graph obtained by this project, we can see that August may have the lowest possibility to have air pollution related to high carbon intensity while December may have the highest possibility. 
+
+Besides, in August, the average temperature will be 19°C, the predicted average sunshine hours (6 hours) will be the second most and the number of rainfall days (13 days) will be the least. Therefore, August will be the best month for people to visit London this year for a comfortable environment and weather.
+
+Although 19°C is comfortable enough but it’s still the highest among the average temperatures of all months. People can choose May which average temperature will be 14°C with more rainfall days (15 days), and had the second least carbon intensity last year if they want a cooler trip with higher humidity.
+
+Regarding the life quality in London, it has the best Travel Connectivity. The scores of Safety and Internet Access rank the second and the third respectively. Cost of Living has the lowest score. It can be seen that London is a nice tourism city and safe. Tourists don't need to worry about the internet but they may need more budget to travel in London.
+
+
+
+3. What difficulties did you have in completing the project?
+
+The main difficulty comes from the first API (carbon intensity). The speed of calling this API is low and unstable. I grabbed the data month by month and the code went wrong at different months every time. It made it harder to discover what the problem was. When I realized that it’s because the API could not run too fast, I used the time method to let the code stop for a while in each loop. Sometimes stopping for three seconds in every loop were long enough but sometimes it caused an error as well. Finally, I let the code stop for three seconds in every loop while stop for more time in every three loops. In the future, the project should be improved by using a better mechanism to control the speed. 
+
+
+
+4. What skills did you wish you had while you were doing the project?
+
+The first skill I wish I had while I was doing this project is that I can obtain the shortest time the code should sleep but make sure it doesn’t cause an error when grabbing the data from the first API (carbon intensity).  The second one is that I wish I could think of a way to combine my two data frames into just one to make my model clearer and easier to read.
+
+
+
+5. What would you do “next” to expand or augment the project?
+
+At first, I would find the same types of data, which are carbon intensity, weather and life quality, of different cities. Therefore, people can compare the conditions in different cities and choose the best place with the best conditions to visit. Or they can schedule and distribute their multiple trips better to visit different cities in different time periods with all satisfying weather and environmental conditions. 
+
+Secondly, I would like to find more data to augment the information for London, such as the corresponding risk to human health of different levels of carbon intensity to let the general public further understand the meaning of this project's numbers. Besides, the Air Pollution Index would be another suitable data to augment this project in order to let people know more about the air quality in London. Last but not the least, there can be a parameter of “year” to obtain the same types of data in different year automatically so people can use the results of this project whenever they want to visit London, not limited to just the time period from May to December this year. 
